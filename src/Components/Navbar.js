@@ -34,7 +34,7 @@ class Navbar extends React.Component {
                     <Link to="/about" className="navbar-link" style={{ textDecoration: 'none' }} onClick={this.handleExpand}>О конкурсе</Link>
                     <Link to="/participation" className="navbar-link" style={{ textDecoration: 'none' }} onClick={this.handleExpand}>Участие</Link>
                     <Link to="/registration" className="navbar-link" style={{ textDecoration: 'none' }} onClick={this.handleExpand}>Регистрация</Link>
-                    <Link to="/results" className="navbar-link" style={{ textDecoration: 'none' }} onClick={this.handleExpand}>Итоги</Link>
+                    {/* <Link to="/results" className="navbar-link" style={{ textDecoration: 'none' }} onClick={this.handleExpand}>Итоги</Link> */}
                 </div>
             </div >
         )

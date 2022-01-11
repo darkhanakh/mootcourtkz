@@ -2,8 +2,7 @@
   width: 100%;
   height: 100vh;
   background-image: url("../Images/landing_img.jpeg");
-  background-position-x: 200%;
-  background-size: 90%;
+  background-size: cover;
 }
 
 .landing-body {
@@ -38,4 +37,18 @@
   outline: none;
   border-radius: 13px;
   background-color: #f9bf1c;
+}
+
+@media only screen and (max-width: 800px) {
+  .landing-body {
+    width: auto;
+    text-align: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .landing-body-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
