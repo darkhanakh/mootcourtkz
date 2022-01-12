@@ -2,7 +2,9 @@ import React from 'react';
 import '../Style/AboutContest.css';
 import { Link } from "react-router-dom";
 
-import file from '../Files/file.docx'
+import reglament from '../Files/reglament.pdf'
+import form1 from '../Files/form1.docx'
+import form2 from '../Files/form2.docx'
 
 function AboutContest() {
     return (
@@ -42,9 +44,9 @@ function AboutContest() {
             <p>- «Лучший оратор – истец»</p>
             <p>- «Лучший оратор – ответчик»</p>
             <div className='file-link-container'>
-                <Link className='file-link' to={file} target="_blank" download>Скачать регламент</Link>
-                <Link className='file-link' to={file} target="_blank" download>Форма 1 -  Меморандум Истца</Link>
-                <Link className='file-link' to={file} target="_blank" download>Форма 2 - Меморандума Ответчика</Link>
+                <Link className='file-link' to={reglament} target="_blank" download>Скачать регламент</Link>
+                <Link className='file-link' to={form1} target="_blank" download>Форма 1 -  Меморандум Истца</Link>
+                <Link className='file-link' to={form2} target="_blank" download>Форма 2 - Меморандума Ответчика</Link>
             </div>
         </div>
     );

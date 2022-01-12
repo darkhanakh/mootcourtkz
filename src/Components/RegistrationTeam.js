@@ -8,7 +8,7 @@ function RegistrationTeam() {
         e.preventDefault()
 
         const studentsRef = db.collection('participantsTeam')
-        if (teamName != '' && schoolName != '' && grade != '' && participants != '' && contacts != '' && checkbox1 && checkbox2) {
+        if (teamName != '' && schoolName != '' && grade != '' && participants != '' && contacts != '' && checkbox1 && checkbox2 && checkbox3) {
             setError(false)
             setTeamName('')
             setSchoolName('')
@@ -43,6 +43,7 @@ function RegistrationTeam() {
     const [registered, setRegistered] = useState(false)
     const [checkbox1, setCheckbox1] = useState('')
     const [checkbox2, setCheckbox2] = useState('')
+    const [checkbox3, setCheckbox3] = useState('')
     const [error, setError] = useState(false)
 
     return (
@@ -67,6 +68,10 @@ function RegistrationTeam() {
                             <input checked={checkbox2} onChange={(e) => setCheckbox2(e.target.checked)} className='checkbox' type="checkbox" />
                             <p className='checkbox-p'>«Даю свое согласие на обработку и использование персональных данных»</p>
                         </div>
+                        <div className='checkbox-container'>
+                            <input checked={checkbox3} onChange={(e) => setCheckbox3(e.target.checked)} className='checkbox' type="checkbox" />
+                            <p className='checkbox-p'>Отправлением настоящей регистрационной формы подтверждаю свое ознакомление с Регламентом конкурса</p>
+                        </div>
                         <button type='submit' className='form-btn'>Отправить заявку</button>
                     </form>
                     <h6 className="feedback-text" id="success-text">Вы успешно зарегистрировались на Moot Court Kazakhstan for High School!</h6>
@@ -88,6 +93,10 @@ function RegistrationTeam() {
                         <div className='checkbox-container'>
                             <input checked={checkbox2} onChange={(e) => setCheckbox2(e.target.checked)} className='checkbox' type="checkbox" />
                             <p className='checkbox-p'>«Даю свое согласие на обработку и использование персональных данных»</p>
+                        </div>
+                        <div className='checkbox-container'>
+                            <input checked={checkbox3} onChange={(e) => setCheckbox3(e.target.checked)} className='checkbox' type="checkbox" />
+                            <p className='checkbox-p'>Отправлением настоящей регистрационной формы подтверждаю свое ознакомление с Регламентом конкурса</p>
                         </div>
                         <button type='submit' className='form-btn'>Отправить заявку</button>
                         {error ?

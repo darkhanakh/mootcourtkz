@@ -11,6 +11,7 @@ import HomePage from './Pages/HomePage';
 import AboutContest from './Pages/AboutContest';
 import Participation from './Pages/Participation';
 import Registration from './Pages/RegistrationPage';
+import Results from './Pages/Results';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' element={<AboutContest />} />
           <Route path='/participation' element={<Participation />} />
           <Route path='/registration' element={<Registration />} />
+          <Route path='/results' element={<Results />} />
         </Routes>
         <Footer />
       </BrowserRouter>
