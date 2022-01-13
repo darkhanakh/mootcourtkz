@@ -23,7 +23,7 @@ class Navbar extends React.Component {
         return (
             <div className="navbar">
                 <Link id='navbar-home-btn' to="/">
-                    Moot court Kazakhstan for High school
+                    Moot Court Kazakhstan for High School
                 </Link>
                 <div className={`minimenu ${this.state._color}`} onClick={this.handleExpand}>
                     <div></div>

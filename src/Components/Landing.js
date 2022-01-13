@@ -6,7 +6,7 @@ function Landing(props) {
         <div className="landing-container">
             <div className='landing-body'>
                 <div className='landing-body-text'>
-                    <h2>Moot Court Kazakhstan For High School</h2>
+                    <h2>Moot Court Kazakhstan for High School</h2>
                     <h6>-игровой судебный процесс-</h6>
                 </div>
                 <button onClick={props.scroll}>Подробнее</button>

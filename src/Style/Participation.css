@@ -10,7 +10,13 @@
 }
 
 .participation h4 {
-  padding-top: 50px;
+  margin-top: 50px;
+  padding: 5px;
+  background-color: #f7f11e;
+}
+
+#transparent-bg {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .participation h5 {
