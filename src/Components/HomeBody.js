@@ -1,10 +1,18 @@
 import React from 'react'
 import '../Style/HomeBody.css'
 import img1 from '../Images/homeImg1.JPG'
+import nis_logo from '../Images/NIS_logo.png'
+import mootcourt_logo from '../Images/mootcourt_logo.jpeg'
+import girlupnis_logo from '../Images/girlupnis_logo.jpeg'
 
 function HomeBody(props) {
     return (
         <div ref={props.rf} className="homebody-container">
+            <div className='sponsor-container'>
+                <img className='sponsor-img' id="nis" src={nis_logo} />
+                <img className='sponsor-img' src={mootcourt_logo} />
+                <img className='sponsor-img' id="girlup" src={girlupnis_logo} />
+            </div>
             <h4>Что такое Moot Court </h4>
             <div>
                 <p>
