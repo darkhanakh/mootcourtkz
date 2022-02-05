@@ -7,7 +7,6 @@ function Registration() {
     return (
         <div>
             <RegistrationTeam />
-            <RegistrationIndividual />
         </div>
     )
 }

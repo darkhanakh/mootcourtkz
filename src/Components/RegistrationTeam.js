@@ -48,7 +48,7 @@ function RegistrationTeam() {
 
     return (
         <div className="reg">
-            <h3>Регистрация с командой</h3>
+            <h3>Регистрация</h3>
             <p></p>
             {registered ?
                 <div>
