@@ -13,6 +13,7 @@ function HomeBody(props) {
                 <img className='sponsor-img' src={mootcourt_logo} />
                 <img className='sponsor-img' id="girlup" src={girlupnis_logo} />
             </div>
+            <h5 style={{ paddingBottom: '110px' }}>Регистрация началась. Регистрация участников до 13 февраля 2022 (23:59. по алматинскому времени)</h5>
             <h4>Что такое Moot Court </h4>
             <div>
                 <p>
