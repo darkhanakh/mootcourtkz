@@ -13,7 +13,7 @@ function HomeBody(props) {
                 <img className='sponsor-img' src={mootcourt_logo} />
                 <img className='sponsor-img' id="girlup" src={girlupnis_logo} />
             </div>
-            <h4 style={{ textAlign: 'center', padding: '11px', marginBottom: '191px', marginTop: '91px', backgroundColor: 'yellow' }}>Регистрация продлена до 17 февраля 2022 г. (23:59 по алматинскому времени). Кейс будет выслан командам 18 февраля 2022 г. Подготовка меморандумов также продлевается до 3 марта 2022 г. (23:59 по алматинскому времени).</h4>
+            <h4 style={{ textAlign: 'center', padding: '11px', marginBottom: '191px', marginTop: '91px', backgroundColor: 'yellow' }}>Регистрация закрыта. Кейс будет выслан командам на электронную почту 18 февраля 2022 г. Подготовка меморандумов до 3 марта 2022 г. (23:59 по алматинскому времени).</h4>
             <h4>Что такое Moot Court </h4>
             <div>
                 <p>

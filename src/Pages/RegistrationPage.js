@@ -7,6 +7,7 @@ function Registration() {
     return (
         <div>
             <RegistrationTeam />
+            <p style={{ paddingBottom: '70px' }}>Регистрация завершилась</p>
         </div>
     )
 }
