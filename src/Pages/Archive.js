@@ -1,5 +1,7 @@
 import './../Style/Archive.css';
 
+import ArchiveSlider from '../Components/ArchiveSlider';
+
 const Archive = () => {
   return (
     <div className="archive">
@@ -60,6 +62,7 @@ const Archive = () => {
         Для того, чтобы увидеть как прошла первая игра конкурса Moot Court Kazakhstan for High
         School смотрите фотографии и видео ниже.
       </p>
+      <ArchiveSlider />
     </div>
   );
 };
