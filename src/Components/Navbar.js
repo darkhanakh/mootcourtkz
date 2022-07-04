@@ -45,18 +45,18 @@ class Navbar extends React.Component {
             Об организаторах конкурса
           </Link>
           <Link
+            to="/archive"
+            className="navbar-link"
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            Архив
+          </Link>
+          <Link
             to="/participation"
             className="navbar-link"
             style={{ textDecoration: 'none' }}
             onClick={this.handleExpand}>
             Участие
-          </Link>
-          <Link
-            to="/registration"
-            className="navbar-link"
-            style={{ textDecoration: 'none' }}
-            onClick={this.handleExpand}>
-            Регистрация
           </Link>
           <Link
             to="/results"
