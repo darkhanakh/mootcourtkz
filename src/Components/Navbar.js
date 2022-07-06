@@ -2,9 +2,8 @@ import React, { useState, useTransition } from "react";
 import "../Style/Navbar.css";
 import { Link } from "react-router-dom";
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
-import I18NextHttpBackend from "i18next-http-backend";
+import { useTranslation } from "react-i18next";
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);

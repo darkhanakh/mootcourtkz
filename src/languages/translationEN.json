@@ -1,1 +1,23 @@
-{ "first-try": "Good" }
+{
+  "whats-mootcourt": "What is Moot Court?",
+  "whats-mootcourt-p1": "Moot Court is a playful simulation of a real court hearing. Moot court reflects proceedings of the real court.",
+  "whats-mootcourt-p2": "As a general rule, there is a participation of two teams representing two sides of the judicial process – the plaintiff and the defendant. Each team presents its position in the dispute.",
+  "whats-mootcourt-p3": "The contest is based on a study case in which there is a certain conflict/disputed situation.",
+  "whats-mootcourt-p4": "The goal of each team is to convince the judges of their case by pre-prepared case solutions (plaintiff's memorandum and defendant's memorandum) and by publicly defending their arguments.",
+  "whats-mootcourt-p5": "To this end, all teams are given time for preparation to participate in the contest.",
+  "history-of-mootcourt": "A brief history of Moot Court",
+  "history-of-mootcourt-p1": "Moot Court contests are an essential part of obtaining a legal education. First-time lawyers gain experience in the art of persuading judges in a safe method, without the risk of inadvertently harming the interests of a real client.",
+  "history-of-mootcourt-p2": "There are the following types of contests of this type, which simulate real trials, such as Moot Court and Mock Trial.",
+  "history-of-mootcourt-p3": "Moot Court was formed from the Scandinavian word that means meeting. It is a contest in the form of a moot court trial by an appellate court, arbitration tribunal, or international dispute resolution body.",
+  "history-of-mootcourt-p4": "This type of contest differs from a Mock Trial in several ways. In addition to the parties and judges, witnesses and jurors also participate in the Mock Trial contest.",
+  "history-of-mootcourt-p5": "Moot Court, unlike Mock Trial, does not involve actual witness testimony, cross-examination, or presentation of evidence, but focuses solely on the application of the law to the case.",
+  "history-of-mootcourt-p6": "In Moot Court, teams represent a particular position on a dispute, playing against each other, and representing opposing slides. However, all teams must prepare in advance their decisions in writing - a memorandum - for both sides. The reason for this is that participants will change sides after passing through the rounds of the contest.",
+  "famous-mootcourt-trials": "Some of the most famous moot court trial contests are:",
+  "famous-mootcourt-trials-1": "• Philip C. Jessup International Law Moot Court Contest",
+  "famous-mootcourt-trials-2": "• Charles Rousseau International Law Moot Court Contest (Le Concours de procès simulé en droit international Charles-Rousseau)",
+  "famous-mootcourt-trials-3": "• IBA ICC Moot Court Contest",
+  "famous-mootcourt-trials-4": "• The Jean-Pictet Contest",
+  "famous-mootcourt-trials-5": "• Nelson Mandela World Human Rights Moot Court Contest",
+  "famous-mootcourt-trials-6": "• European Human Rights Moot Court Contest",
+  "famous-mootcourt-trials-7": "• ELSA Moot Court"
+}

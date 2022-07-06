@@ -1,98 +1,52 @@
-import React from 'react';
-import '../Style/HomeBody.css';
-import img1 from '../Images/homeImg1.JPG';
-import nis_logo from '../Images/NIS_logo.png';
-import mootcourt_logo from '../Images/mootcourt_logo.jpeg';
-import girlupnis_logo from '../Images/girlupnis_logo.jpeg';
+import React from "react";
+import "../Style/HomeBody.css";
+import img1 from "../Images/homeImg1.JPG";
+import nis_logo from "../Images/NIS_logo.png";
+import mootcourt_logo from "../Images/mootcourt_logo.jpeg";
+import girlupnis_logo from "../Images/girlupnis_logo.jpeg";
+import { useTranslation } from "react-i18next";
 
 function HomeBody({ rf }) {
+  const { t } = useTranslation();
   return (
     <div ref={rf} className="homebody-container">
       <div className="sponsor-container">
         <img className="sponsor-img" id="nis" src={nis_logo} alt="nis" />
         <img className="sponsor-img" src={mootcourt_logo} alt="mootcourt" />
-        <img className="sponsor-img" id="girlup" src={girlupnis_logo} alt="girlupnis" />
+        <img
+          className="sponsor-img"
+          id="girlup"
+          src={girlupnis_logo}
+          alt="girlupnis"
+        />
       </div>
-      <h4>Что такое Moot Court </h4>
+      <h4>{t("whats-mootcourt")}</h4>
       <div>
-        <p>
-          Moot Court – игровой судебный процесс, имитирующий судебное разбирательство. Учебный суд
-          отражает процессы реального суда.
-        </p>
-        <p>
-          Как правило, принимают участие команды, представляющие 2 стороны процесса – истца и
-          ответчика. Каждая команда представляет свою позицию в споре.
-        </p>
-        <p>
-          Конкурс проводится на основе «case» учебного дела, в котором есть определенная
-          конфликтная/спорная ситуация.{' '}
-        </p>
-        <p>
-          Цель каждой команды – убедить в своей правоте судей путем заранее подготовленного решения
-          кейса (меморандум истца и меморандум ответчика) и публичной защиты своих доводов.{' '}
-        </p>
-        <p>
-          В связи с этим, всем командам предоставляется время на подготовку для участия в конкурсе.
-        </p>
+        <p>{t("whats-mootcourt-p1")}</p>
+        <p>{t("whats-mootcourt-p2")}</p>
+        <p>{t("whats-mootcourt-p3")}</p>
+        <p>{t("whats-mootcourt-p4")}</p>
+        <p>{t("whats-mootcourt-p5")}</p>
       </div>
       <img id="homeImg1" src={img1} alt="homeImage" />
-      <h4>Краткая история Moot Court </h4>
+      <h4>{t("history-of-mootcourt")}</h4>
       <div>
-        <p>
-          Конкурсы игрового судебного процесса являются важной частью получения юридического
-          образования. Начинающие юристы получают опыт в искусстве убеждения судей безопасным
-          методом, не рискуя непреднамеренно нанести ущерб интересам реального клиента.
-        </p>
-        <p>
-          Существуют следующие виды конкурсов такого типа, которые моделируют настоящие судебные
-          разбирательства, как Moot Court и Mock Trial.
-        </p>
-        <p>
-          Moot Court - образовано от скандинавского слова, означающего «встречу». Это конкурс в
-          форме игрового судебного процесса апелляционного суда, арбитражного суда или
-          международного органа по разрешению споров.
-        </p>
-        <p>
-          Данный вид конкурса отличается от Mock Trial (имитационных судебных процессов) по
-          нескольким критериям. В конкурсе Mock Trial помимо сторон и судей участие также принимают
-          свидетели и присяжные.
-        </p>
-        <p>
-          Moot Court в отличие от Mock Trial, не включает фактических показаний свидетелей,
-          перекрестного допроса или представления доказательств, а сосредоточено исключительно на
-          применении закона к делу (case).
-        </p>
-        <p>
-          В Moot Court команды представляют определенную позицию по спору, играя против друг друга,
-          и представляя противоположные стороны. Тем не менее, всем командам необходимо заранее
-          подготовить свои решения в письменном виде – меморандум – за обе стороны. Причина этому,
-          участники, пройдя этапы конкурса, будут меняться сторонами.
-        </p>
+        <p>{t("history-of-mootcourt-p1")}</p>
+        <p>{t("history-of-mootcourt-p2")}</p>
+        <p>{t("history-of-mootcourt-p3")}</p>
+        <p>{t("history-of-mootcourt-p4")}</p>
+        <p>{t("history-of-mootcourt-p5")}</p>
+        <p>{t("history-of-mootcourt-p6")}</p>
       </div>
-      <h5>Самые известные конкурсы постановочного суда</h5>
+      <h5>{t("famous-mootcourt-trials")}</h5>
       <div className="contest-card-container">
-        <p>
-          • Конкурс по международному праву им. Филипа Джессопа (Philip C. Jessup International Law
-          Moot Court Competition)
-        </p>
-        <p>
-          • Конкурс по международному праву им. Шарля Руссо (Le Concours de procès simulé en droit
-          international Charles-Rousseau)
-        </p>
-        <p>• Модель Международного уголовного суда (IBA ICC MOOT Court)</p>
-        <p>
-          • Конкурс им. Жана Пикте по международному гуманитарному праву (The JEAN-PICTET
-          Competition)
-        </p>
-        <p>
-          • Всемирный конкурс судопроизводства по правам человека им. Нельсона Манделы (Nelson
-          Mandela World Human Rights Moot Court Competition)
-        </p>
-        <p>
-          • Модель Европейского суда по правам человека (European Human Rights Moot Court
-          Competition)
-        </p>
-        <p>• Международный конкурс по праву Всемирной торговой организации (ELSA Moot Court)</p>
+        <p>{t("famous-mootcourt-trials-1")}</p>
+        <p>{t("famous-mootcourt-trials-2")}</p>
+        <p>{t("famous-mootcourt-trials-3")}</p>
+        <p>{t("famous-mootcourt-trials-4")}</p>
+        <p>{t("famous-mootcourt-trials-5")}</p>
+        <p>{t("famous-mootcourt-trials-6")}</p>
+        <p>{t("famous-mootcourt-trials-7")}</p>
       </div>
     </div>
   );
