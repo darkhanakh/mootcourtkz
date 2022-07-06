@@ -11,7 +11,7 @@ function Landing(props) {
           <h2>Moot Court Kazakhstan for High School</h2>
           <h6>-игровой судебный процесс-</h6>
         </div>
-        <button onClick={props.scroll}>Подробнее</button>
+        <button onClick={props.scroll}>{t("landing-more")}</button>
       </div>
     </div>
   );
