@@ -1,61 +1,65 @@
-import React from 'react';
-import '../Style/AboutContest.css';
+import React from "react";
+import "../Style/AboutContest.css";
 import { Link } from "react-router-dom";
-
-import reglament from '../Files/reglament.pdf'
-import form1 from '../Files/form1.docx'
-import form2 from '../Files/form2.docx'
-import judging from '../Files/judging.docx'
+import reglament from "../Files/reglament.pdf";
+import form1 from "../Files/form1.docx";
+import form2 from "../Files/form2.docx";
+import judging from "../Files/judging.docx";
+import { useTranslation } from "react-i18next";
 
 function AboutContest() {
-    return (
-        <div className="aboutcontest">
-            <h4>Moot Court Kazakhstan for High School</h4>
-            <p>
-                Конкурс Moot Court Kazakhstan for High School организован клубом GirlUp NIS при поддержке НИШ ФМН г. Алматы. Это первое мероприятие, для учеников старших классов, проводимое на территории Казахстана. Конкурс будет представлять собой судебный процесс апелляционного суда по делу, предоставленному участникам организационным комитетом.
-            </p>
-            <h5>Идея конкурса заключается:</h5>
-            <div className='about-ideas-container'>
-                <p>• в привлечении интереса молодежи к изучению юриспруденции и права</p>
-                <p>• развитие полезных навыков, таких как ораторское мастерство, анализ данных, критическое мышление, способность изучать и понимать новую информацию в краткие сроки, навыки research.</p>
-            </div>
-            <p>
-                Участие в конкурсе бесплатное и не требует физического присутствия.
-                Все этапы конкурса, включая церемонию награждения, будут проходить онлайн, на базе приложения Zoom.
-            </p>
-            <p>В конкурсе могут принять участие ученики 9, 10, 11 и 12-х классов любой школы на территории Казахстана. </p>
-            <p>Команда для участия должна состоять из 2-4 человек. </p>
-            <p>Каждая команда вправе иметь до 2 тренеров для подготовки к конкурсу, которые могут оказывать исключительно консультативную помощь. </p>
-            <p>Рабочий язык конкурса – русский язык.</p>
-            <h5>Этапы конкурса</h5>
-            <p>Регистрация участников – до 17 февраля 2022 г. (23:59 по алматинскому времени)</p>
-            <p>Отправка кейса участникам – 18 февраля 2022 г.</p>
-            <p>Подготовка участниками меморандумов – 18 февраля – 03 марта 2022 г. (23:59 по алматинскому времени)</p>
-            <p>Отбор меморандумов судьями конкурса – 03 марта 2022 – 16 марта 2022 г.</p>
-            <p>Публикация списка команд, вышедших в основной этап (первый тур) – 17 марта 2022 г.</p>
-            <p>Жеребьевка команд (деление на истцов и ответчиков) – 17 марта 2022 г.</p>
-            <p>Жеребьевка команд (деление на пары) – 24 марта 2022 г.</p>
-            <p>Проведение Moot Court Kazakhstan for High School в онлайн режиме – 25 марта 2022 г.</p>
-            <p>Награждение участников – 25 марта 2022 г.</p>
-            <h5>Победители и номинации конкурса</h5>
-            <p>Победители: 1, 2, 3 призовые места</p>
-            <p>Победителем конкурса (1 место) признается команда, одержавшая победу в финальном этапе (втором туре основного этапа) конкурса.</p>
-            <p>Второе место присуждается команде, вышедшей в финальный этап (второй тур основного этапа) конкурса.</p>
-            <p>Третье место присуждается команде, набравшей большее количество баллов среди команд, не прошедших в финальный этап (второй тур основного этапа) конкурса.</p>
-            <h5>Кроме призовых мест будет награждение по следующим номинациям:</h5>
-            <p>- «За волю к победе»</p>
-            <p>- «Лучший меморандум истца»</p>
-            <p>- «Лучший меморандум ответчика»</p>
-            <p>- «Лучший оратор – истец»</p>
-            <p>- «Лучший оратор – ответчик»</p>
-            <div className='file-link-container'>
-                <Link className='file-link' to={reglament} target="_blank" download>Скачать регламент</Link>
-                <Link className='file-link' to={form1} target="_blank" download>Форма 1 -  Меморандум Истца</Link>
-                <Link className='file-link' to={form2} target="_blank" download>Форма 2 - Меморандума Ответчика</Link>
-                <Link className='file-link' to={judging} target="_blank" download>Критерии оценивания</Link>
-            </div>
-        </div>
-    );
+  const { t } = useTranslation();
+  return (
+    <div className="aboutcontest">
+      <h4>Moot Court Kazakhstan for High School</h4>
+      <p>{t("about-introduction")}</p>
+      <h5>{t("contest-idea")}</h5>
+      <div className="about-ideas-container">
+        <p>{t("contest-idea-p1")}</p>
+        <p>{t("contest-idea-p2")}</p>
+      </div>
+      <p>{t("contest-idea-p3")}</p>
+      <p>{t("contest-idea-p4")}</p>
+      <p>{t("contest-idea-p5")}</p>
+      <p>{t("contest-idea-p6")}</p>
+      <p>{t("contest-idea-p7")}</p>
+      <h5>{t("contest-steps")}</h5>
+      <p>{t("contest-steps-p1")}</p>
+      <p>{t("contest-steps-p2")}</p>
+      <p>{t("contest-steps-p3")}</p>
+      <p>{t("contest-steps-p4")}</p>
+      <p>{t("contest-steps-p5")}</p>
+      <p>{t("contest-steps-p6")}</p>
+      <p>{t("contest-steps-p7")}</p>
+      <p>{t("contest-steps-p8")}</p>
+      <p>{t("contest-steps-p9")}</p>
+      <h5>{t("winner-and-nominations")}</h5>
+      <p>{t("winner-and-nominations-p1")}</p>
+      <p>{t("winner-and-nominations-p2")}</p>
+      <p>{t("winner-and-nominations-p3")}</p>
+      <p>{t("winner-and-nominations-p4")}</p>
+      <h5>{t("additional-prizes")}</h5>
+      <p>{t("additional-prizes-p1")}</p>
+      <p>{t("additional-prizes-p2")}</p>
+      <p>{t("additional-prizes-p3")}</p>
+      <p>{t("additional-prizes-p4")}</p>
+      <p>{t("additional-prizes-p5")}</p>
+      <div className="file-link-container">
+        <Link className="file-link" to={reglament} target="_blank" download>
+          {t("about-link1")}
+        </Link>
+        <Link className="file-link" to={form1} target="_blank" download>
+          {t("about-link2")}
+        </Link>
+        <Link className="file-link" to={form2} target="_blank" download>
+          {t("about-link3")}
+        </Link>
+        <Link className="file-link" to={judging} target="_blank" download>
+          {t("about-link4")}
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default AboutContest;
