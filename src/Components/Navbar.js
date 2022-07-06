@@ -1,9 +1,9 @@
-import React, { useState, useTransition } from "react";
-import "../Style/Navbar.css";
-import { Link } from "react-router-dom";
-import i18n from "i18next";
-import { useTranslation } from "react-i18next";
-import { withTranslation } from "react-i18next";
+import React, { useState, useTransition } from 'react';
+import '../Style/Navbar.css';
+import { Link } from 'react-router-dom';
+import i18n from 'i18next';
+import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -27,90 +27,68 @@ class Navbar extends React.Component {
         <Link id="navbar-home-btn" to="/">
           Moot Court Kazakhstan for High School
         </Link>
-        <div
-          className={`minimenu ${this.state._color}`}
-          onClick={this.handleExpand}
-        >
+        <div className={`minimenu ${this.state._color}`} onClick={this.handleExpand}>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div className={`links ${this.state.minimenu ? `active` : ""}`}>
-          <Link
-            to="#"
-            className="navbar-link"
-            style={{ textDecoration: "none" }}
-          >
+        <div className={`links ${this.state.minimenu ? `active` : ''}`}>
+          <Link to="#" className="navbar-link" style={{ textDecoration: 'none' }}>
             <Link
               to="#"
               className="navbar-link"
-              style={{ textDecoration: "none", padding: "2px" }}
+              style={{ textDecoration: 'none', padding: '2px' }}
               onClick={() => {
-                i18n.changeLanguage("ru");
-              }}
-            >
+                i18n.changeLanguage('ru');
+              }}>
               рус |
             </Link>
             <Link
               to="#"
               className="navbar-link"
-              style={{ textDecoration: "none", padding: "2px" }}
+              style={{ textDecoration: 'none', padding: '2px' }}
               onClick={() => {
-                i18n.changeLanguage("kz");
-              }}
-            >
+                i18n.changeLanguage('kz');
+              }}>
               қаз |
             </Link>
             <Link
               to="#"
               className="navbar-link"
-              style={{ textDecoration: "none", padding: "2px" }}
+              style={{ textDecoration: 'none', padding: '2px' }}
               onClick={() => {
-                i18n.changeLanguage("en");
-              }}
-            >
+                i18n.changeLanguage('en');
+              }}>
               eng
             </Link>
           </Link>
           <Link
             to="/about"
             className="navbar-link"
-            style={{ textDecoration: "none" }}
-            onClick={this.handleExpand}
-          >
-            {t("navbar-about-comp")}
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            {t('navbar-about-comp')}
           </Link>
           <Link
             to="/organizers"
             className="navbar-link"
-            style={{ textDecoration: "none" }}
-            onClick={this.handleExpand}
-          >
-            {t("navbar-about-organizer")}
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            {t('navbar-about-organizer')}
           </Link>
           <Link
             to="/archive"
             className="navbar-link"
-            style={{ textDecoration: "none" }}
-            onClick={this.handleExpand}
-          >
-            {t("navbar-archive")}
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            {t('navbar-archive')}
           </Link>
           <Link
             to="/participation"
             className="navbar-link"
-            style={{ textDecoration: "none" }}
-            onClick={this.handleExpand}
-          >
-            {t("navbar-participation")}
-          </Link>
-          <Link
-            to="/results"
-            className="navbar-link"
-            style={{ textDecoration: "none" }}
-            onClick={this.handleExpand}
-          >
-            {t("navbar-results")}
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            {t('navbar-participation')}
           </Link>
         </div>
       </div>
