@@ -3,6 +3,7 @@ import "../Style/Navbar.css";
 import { Link } from "react-router-dom";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
+import { withTranslation } from "react-i18next";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class Navbar extends React.Component {
     }
   };
   render() {
+    const { t } = this.props;
     return (
       <div className="navbar">
         <Link id="navbar-home-btn" to="/">
@@ -76,7 +78,7 @@ class Navbar extends React.Component {
             style={{ textDecoration: "none" }}
             onClick={this.handleExpand}
           >
-            О конкурсе
+            {t("navbar-about-comp")}
           </Link>
           <Link
             to="/organizers"
@@ -84,7 +86,7 @@ class Navbar extends React.Component {
             style={{ textDecoration: "none" }}
             onClick={this.handleExpand}
           >
-            Об организаторах конкурса
+            {t("navbar-about-organizer")}
           </Link>
           <Link
             to="/archive"
@@ -92,7 +94,7 @@ class Navbar extends React.Component {
             style={{ textDecoration: "none" }}
             onClick={this.handleExpand}
           >
-            Архив
+            {t("navbar-archive")}
           </Link>
           <Link
             to="/participation"
@@ -100,7 +102,7 @@ class Navbar extends React.Component {
             style={{ textDecoration: "none" }}
             onClick={this.handleExpand}
           >
-            Участие
+            {t("navbar-participation")}
           </Link>
           <Link
             to="/results"
@@ -108,7 +110,7 @@ class Navbar extends React.Component {
             style={{ textDecoration: "none" }}
             onClick={this.handleExpand}
           >
-            Итоги
+            {t("navbar-results")}
           </Link>
         </div>
       </div>
@@ -116,4 +118,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default withTranslation()(Navbar);

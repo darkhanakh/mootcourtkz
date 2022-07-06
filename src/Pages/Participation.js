@@ -48,7 +48,7 @@ function Participation() {
       <p>{t("participation-questions-p3-body")} </p>
       <h5>{t("participation-questions-p4-title")} </h5>
       <p>
-        {t("participation-questions-p4-body")}
+        {t("participation-questions-p4-body")}{" "}
         <Link className="file-link" to={reglament} target="_blank" download>
           {t("participation-questions-p4-body-link")}
         </Link>{" "}
