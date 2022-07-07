@@ -7,7 +7,6 @@ import HomePage from './Pages/HomePage';
 import AboutContest from './Pages/AboutContest';
 import Participation from './Pages/Participation';
 
-import Results from './Pages/Results';
 import Organizers from './Pages/Organizers';
 import Archive from './Pages/Archive';
 
