@@ -1,14 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
-import I18NextHttpBackend from "i18next-http-backend";
-import translationEN from "./languages/translationEN";
-import translationRU from "./languages/translationRU";
-import translationKZ from "./languages/translationKZ";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import i18next from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import I18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
+import I18NextHttpBackend from 'i18next-http-backend';
+import translationEN from './languages/translationEN';
+import translationRU from './languages/translationRU';
+import translationKZ from './languages/translationKZ';
 
 const resources = {
   en: { translation: translationEN },
@@ -20,14 +20,14 @@ i18next
   .use(I18nextBrowserLanguageDetector)
   .use(I18NextHttpBackend)
   .init({
-    lng: document.querySelector("html").lang,
-    fallbackLng: "ru",
+    lng: 'ru',
+    fallbackLng: 'ru',
     detection: {
-      order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
-      cache: ["cookie"],
+      order: ['cookie', 'localStorage', 'htmlTag', 'path', 'subdomain'],
+      cache: ['cookie'],
     },
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json",
+      loadPath: '/assets/locales/{{lng}}/translation.json',
     },
     debug: true,
     resources,
@@ -37,5 +37,5 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );

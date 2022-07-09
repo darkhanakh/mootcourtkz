@@ -69,6 +69,13 @@ class Navbar extends React.Component {
             {t('navbar-about-comp')}
           </Link>
           <Link
+            to="/participation"
+            className="navbar-link"
+            style={{ textDecoration: 'none' }}
+            onClick={this.handleExpand}>
+            {t('navbar-participation')}
+          </Link>
+          <Link
             to="/organizers"
             className="navbar-link"
             style={{ textDecoration: 'none' }}
@@ -81,13 +88,6 @@ class Navbar extends React.Component {
             style={{ textDecoration: 'none' }}
             onClick={this.handleExpand}>
             {t('navbar-archive')}
-          </Link>
-          <Link
-            to="/participation"
-            className="navbar-link"
-            style={{ textDecoration: 'none' }}
-            onClick={this.handleExpand}>
-            {t('navbar-participation')}
           </Link>
         </div>
       </div>
